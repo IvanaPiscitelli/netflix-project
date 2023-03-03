@@ -1,8 +1,11 @@
+import React from "react";
+import Movies from "./components/Movies/Movies";
+
 function App() {
   return (
-    <div>
-      <h2>Let's get started!</h2>
-    </div>
+    <main>
+      <Movies />
+    </main>
   );
 }
 
