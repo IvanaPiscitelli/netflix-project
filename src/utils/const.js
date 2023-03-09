@@ -17,11 +17,17 @@ export const BASE_IMAGE = "https://image.tmdb.org/t/p/w500";
 export const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 1450 },
-    items: 6,
+    breakpoint: { max: 4000, min: 1600 },
+    items: 7,
     slidesToSlide: 2,
   },
   largeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 1600, min: 1450 },
+    items: 6,
+    slidesToSlide: 2,
+  },
+  bigDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 1450, min: 1291 },
     items: 5,
