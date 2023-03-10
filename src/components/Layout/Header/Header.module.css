@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  position: sticky;
+}
+
+.logo {
+  cursor: pointer;
+  color: rgba(229, 9, 20, 1);
+}
+
+.logo img {
+  width: 9.25rem;
+  height: 2.5rem;
+}
+
+.choice {
+  display: flex;
+  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  gap: 5px;
+  list-style: none;
+  font-size: 18px;
+}
+
+li a,
+li a:hover,
+li a:visited,
+li a:active {
+  color: inherit;
+  text-decoration: none;
+}
+li a:hover {
+  font-weight: 900;
+  color: rgba(255, 255, 255);
+  opacity: 100%;
+}
+
+li {
+  width: 70px;
+  cursor: pointer;
+}

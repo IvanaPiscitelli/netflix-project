@@ -1,8 +1,8 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { BASE_IMAGE, responsive } from "../../utils/const";
-import Movie from "../Movies/Movie";
+import { BASE_IMAGE, responsive } from "../../../utils/const";
+import Movie from "../../Movies/Movie";
 import style from "./Carousels.module.css";
 
 const Carousels = ({
