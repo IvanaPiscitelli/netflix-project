@@ -9,7 +9,14 @@ export const requests = {
   fetchComedyMovies: `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&with_genres=35`,
   fetchHorrorMovies: `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&with_genres=27`,
   fetchRomanceMovies: `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&with_genres=10749`,
-  fetchDocumentaries: `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&with_genres=99`,
+  fetchDocumentariesMovies: `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&with_genres=99`,
+  fetchDocumentariesTvShow: `${BASE_URL}/discover/tv?api_key=${API_KEY}&language=en-US&with_genres=99`,
+  fetchRomanceTvShow: `${BASE_URL}/discover/tv?api_key=${API_KEY}&language=en-US&with_genres=10749`,
+  fetchNetflixOriginalsTvShow: `${BASE_URL}/discover/tv?api_key=${API_KEY}&with_networks=213`,
+  fetchTopRatedTvShow: `${BASE_URL}/tv/top_rated?api_key=${API_KEY}&language=en-US`,
+  fetchActionTvShow: `${BASE_URL}/discover/tv?api_key=${API_KEY}&language=en-US&with_genres=10759`,
+  fetchComedyTvShow: `${BASE_URL}/discover/tv?api_key=${API_KEY}&language=en-US&with_genres=35`,
+  fetchCrimeTvShow: `${BASE_URL}/discover/tv?api_key=${API_KEY}&language=en-US&with_genres=80`,
 };
 
 export const BASE_IMAGE = "https://image.tmdb.org/t/p/w500";
