@@ -5,7 +5,7 @@ import { BASE_IMAGE, responsive } from "../../../utils/const";
 import Movie from "../../Movies/Movie";
 import style from "./Carousels.module.css";
 
-const Carousels = ({
+const CarouselsMovies = ({
   trendingMovies,
   romanceMovies,
   originalsMovies,
@@ -69,4 +69,4 @@ const Carousels = ({
   );
 };
 
-export default Carousels;
+export default CarouselsMovies;

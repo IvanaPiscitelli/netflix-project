@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Carousels from "./components/Layout/Carousels/Carousels";
+import CarouselsMovies from "./components/Layout/Carousels/CarouselsMovies";
 import Header from "./components/Layout/Header/Header";
-import { fetchMovies } from "./utils/axios";
+import { fetchContent } from "./utils/axios";
 import { requests } from "./utils/const";
 
 function App() {
@@ -16,28 +16,28 @@ function App() {
 
   useEffect(() => {
     async function getMovies() {
-      const dataTrending = await fetchMovies(requests.fetchTrending);
+      const dataTrending = await fetchContent(requests.fetchTrending);
       setTrendingMovies(dataTrending.results);
 
-      const dataRomance = await fetchMovies(requests.fetchRomanceMovies);
+      const dataRomance = await fetchContent(requests.fetchRomanceMovies);
       setRomanceMovies(dataRomance.results);
 
-      const dataOriginals = await fetchMovies(requests.fetchNetflixOriginals);
+      const dataOriginals = await fetchContent(requests.fetchNetflixOriginals);
       setOriginalsMovies(dataOriginals.results);
 
-      const dataTopRated = await fetchMovies(requests.fetchTopRated);
+      const dataTopRated = await fetchContent(requests.fetchTopRated);
       setTopRatedMovies(dataTopRated.results);
 
-      const dataAction = await fetchMovies(requests.fetchActionMovies);
+      const dataAction = await fetchContent(requests.fetchActionMovies);
       setActionMovies(dataAction.results);
 
-      const dataComedy = await fetchMovies(requests.fetchComedyMovies);
+      const dataComedy = await fetchContent(requests.fetchComedyMovies);
       setComedyMovies(dataComedy.results);
 
-      const dataHorror = await fetchMovies(requests.fetchHorrorMovies);
+      const dataHorror = await fetchContent(requests.fetchHorrorMovies);
       setHorrorMovies(dataHorror.results);
 
-      const dataDocumentaries = await fetchMovies(requests.fetchDocumentaries);
+      const dataDocumentaries = await fetchContent(requests.fetchDocumentariesMovies);
       setDocumentariesMovies(dataDocumentaries.results);
     }
     getMovies();
@@ -46,7 +46,7 @@ function App() {
   return (
     <main>
       <Header />
-      <Carousels
+      <CarouselsMovies
         trendingMovies={trendingMovies}
         romanceMovies={romanceMovies}
         originalsMovies={originalsMovies}

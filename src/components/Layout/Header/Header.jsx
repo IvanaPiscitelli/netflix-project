@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <div className={style.logo}>
-        <a href="https://fontmeme.com/netflix-font/">
+        <a href="/">
           <img
             src="https://fontmeme.com/permalink/230310/2ded9cd4f91357c71a6d7b7e489d0287.png"
             alt="netflix-font"
@@ -16,16 +16,16 @@ const Header = () => {
 
       <ul className={style.choice}>
         <li>
-          <a href="http://">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="http://">Tv Show</a>
+          <a href="/tv-show">Tv Show</a>
         </li>
         <li>
-          <a href="http://">Movies</a>
+          <a href="/movies">Movies</a>
         </li>
         <li>
-          <a href="http://">My List</a>
+          <a href="/my-list">My List</a>
         </li>
       </ul>
     </header>
