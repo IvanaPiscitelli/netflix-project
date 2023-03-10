@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CarouselsTvShow from "../components/Layout/Carousels/CarouselsTvShow";
+import Header from "../components/Layout/Header/Header";
 import { fetchContent } from "../utils/axios";
 import { requests } from "../utils/const";
 
@@ -15,7 +16,7 @@ const TvShow = () => {
 
   useEffect(() => {
     async function getTvShow() {
-      const dataTrending = await fetchContent(requests.fetchTrending);
+      const dataTrending = await fetchContent(requests.fetchTrendingTvShow);
       setTrendingTvShow(dataTrending.results);
 
       const dataRomance = await fetchContent(requests.fetchRomanceTvShow);
@@ -44,6 +45,7 @@ const TvShow = () => {
 
   return (
     <div>
+      <Header />
       <CarouselsTvShow
         trendingTvShow={trendingTvShow}
         romanceTvShow={romanceTvShow}
