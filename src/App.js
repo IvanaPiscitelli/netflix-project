@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import Carousels from "./components/Layout/Carousels/Carousels";
+import Header from "./components/Layout/Header/Header";
 import { fetchMovies } from "./utils/axios";
 import { requests } from "./utils/const";
-import Carousels from "./components/Layout/Carousels";
 
 function App() {
   const [trendingMovies, setTrendingMovies] = useState([]);
@@ -44,6 +45,7 @@ function App() {
 
   return (
     <main>
+      <Header />
       <Carousels
         trendingMovies={trendingMovies}
         romanceMovies={romanceMovies}
