@@ -2,6 +2,12 @@ import React from "react";
 import style from "./Header.module.css";
 
 const Header = () => {
+  const navItem = [
+    { id: 1, name: "Home", link: "/" },
+    { id: 2, name: "Tv Show", link: "/tv-show" },
+    { id: 3, name: "Movie", link: "/movies" },
+    { id: 4, name: "My List", link: "/my-list" },
+  ];
   return (
     <header>
       <div className={style.logo}>
@@ -14,19 +20,14 @@ const Header = () => {
         </a>
       </div>
 
-      <ul className={style.choice}>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/tv-show">Tv Show</a>
-        </li>
-        <li>
-          <a href="/movies">Movies</a>
-        </li>
-        <li>
-          <a href="/my-list">My List</a>
-        </li>
+      <ul className={style["navigation-list"]}>
+        {navItem.map((item) => {
+          return (
+            <li key={item.id} id={item.id}>
+              <a href={item.link}>{item.name}</a>
+            </li>
+          );
+        })}
       </ul>
     </header>
   );
